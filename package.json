@@ -1,5 +1,26 @@
 {
   "name": "job-portal",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "description": "- Fetching from several apis\r - Create an updating job board\r - Cron Job, runs after every set interval",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harshita-Kanal/Job-Portal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harshita-Kanal/Job-Portal/issues"
+  },
+  "homepage": "https://github.com/Harshita-Kanal/Job-Portal#readme",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "redis": "^3.0.2"
+  }
 }
