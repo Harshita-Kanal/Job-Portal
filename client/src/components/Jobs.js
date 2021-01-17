@@ -1,13 +1,14 @@
+import { Typography } from '@material-ui/core';
 import React from 'react'
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
 import Job from './Job';
 
 export default function Jobs({jobs}){
     return(
-        <div><Typography variant = "h2">Entry level software jobs</Typography>
+        <div><h1 className = "head">Entry level software jobs</h1>
         {
            jobs.map(
-                job => <Job job = {job} />
+                (job, i) => <Job key = {i} job = {job} />
             )
         }
         </div>   

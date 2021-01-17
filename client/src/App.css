@@ -1,28 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 .App {
-  text-align: center;
+  /* text-align: center; */
   font-family: 'Montserrat', sans-serif;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head{
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.res{
+  float: left;
+  padding: 5px;
+  font-size: large;
+  word-wrap: break-word;
+  overflow: auto;
+
 }
+
+.res2{
+  float: right;
+  padding: 5px;
+  font-size: large;
+  word-wrap: break-word;
+}
+.top{
+  padding: 5px;
+}
+
+.header{
+  padding: 5px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.comp{
+  padding: 5px;
+  font-weight: 600;
+  color: gray;
+}
+
 
 .job{
   display: flex;
   margin: 10px 0;
-  padding: 10px 0;
-  width: 80%;
+  padding: 40px;
+  max-width: 70%;
   padding: 10px 0;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
 
