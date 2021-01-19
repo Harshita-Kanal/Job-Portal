@@ -8,6 +8,10 @@
 .head{
   text-align: center;
 }
+.subhead{
+  text-align: center;
+  color: gray;
+}
 
 .res{
   float: left;
@@ -50,6 +54,17 @@
   margin: 0 auto;
   justify-content: space-between;
   flex-direction: row;
+}
+
+.job:hover{
+  cursor: pointer;
+  color: darkgray;
+}
+
+.step-align{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
