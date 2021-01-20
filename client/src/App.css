@@ -68,6 +68,11 @@
 }
 
 
+.details{
+  height: 30px;
+  float: right;
+}
+
 
 .App-link {
   color: #61dafb;

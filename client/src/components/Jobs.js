@@ -7,6 +7,7 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Job from './Job';
+import JobModal from './JobModal'
 
 export default function Jobs({jobs}){
     const numJobs = jobs.length
@@ -18,6 +19,18 @@ export default function Jobs({jobs}){
         },
     });
       
+    //modal
+    const [open, setOpen] = React.useState(false);
+    const [selectedJob, selectJob]  = React.useState({});
+
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
+  
     const classes = useStyles();
     const [activeStep, setActiveStep] = React.useState(0);
  
@@ -34,11 +47,15 @@ export default function Jobs({jobs}){
       };
 
     return(
-        <div><h1 className = "head">Entry level software jobs</h1>
+        <div>
+        <JobModal open = {open}  job = {selectedJob} handleClose = {handleClose}/>    
+        <h1 className = "head">Entry level software jobs</h1>
         <h4 className = "subhead">Found {numJobs} Jobs</h4>
         {
            jobsOnPage.map(
-                (job, i) => <Job key = {i} job = {job} />
+                (job, i) => <Job key = {i} job = {job} onClick = {() => {
+                    handleClickOpen();
+                    selectJob(job)}}/>
             )
         }
          
