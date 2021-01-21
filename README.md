@@ -6,6 +6,8 @@
 - Using redis and node-redis
 - A simple express server
 - Logic to filter jobs
+- Pagination
+- Material Front-end
 
 
 ## Components 
