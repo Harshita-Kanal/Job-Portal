@@ -105,7 +105,7 @@ export default function Jobs({jobs}){
     else{
       numPages = 1
     }
-    //no of jops per page = 50
+    //no of jobs per page = 50
 
     const handleNext = () => {
         if(numPages > 1){
