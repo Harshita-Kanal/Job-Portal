@@ -1,7 +1,10 @@
 import fetch from 'node-fetch';
 import './App.css';
 import Jobs from './components/Jobs';
-import React from 'react'
+import React from 'react';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
+
 import Paper from '@material-ui/core/Paper';
 const JOB_API_URL = "http://localhost:3001/jobs"
 
@@ -20,6 +23,15 @@ async function fetchJobs(updateCb) {
 
 
 function App() {
+  const THEME = createMuiTheme({
+    typography: {
+     "fontFamily": `"montserrat"`,
+     "fontSize": 14,
+     "fontWeightLight": 300,
+     "fontWeightRegular": 400,
+     "fontWeightMedium": 500
+    }
+ });
   
   const [jobList, updateJobs] = React.useState([])
 
@@ -31,7 +43,9 @@ function App() {
 
   return (
     <div className="App">
-      <Jobs jobs = {jobList}/>
+       <ThemeProvider theme={THEME}>
+          <Jobs jobs = {jobList}/>
+       </ThemeProvider>
     </div>
   );
 }
