@@ -1,20 +1,22 @@
-## Job Portal
+# *__Job Portal__*
+
 <p align = "center">
   <img src = "Demo.gif" height = "300px" width = "640px" />
  </p>
+ 
+## About
+A Job Portal Built in React, Node, Express and Redis. 
 
-
-
+## Features and Concepts implemented
 - Fetching from GitHub API
 - Create an updating job board
-- Cron Job, runs after every set interval
-- Use node caching with redis
-- Using redis and node-redis
-- A simple express server
-- Logic to filter jobs
-- Pagination
-- Material Front-end
-
+- Setting up a Cron Job, which runs after every set interval
+- Using Node caching with Redis
+- Using Redis and Node-Redis
+- Creating A simple Express server
+- Buiding Logic to filter jobs
+- Implementing Pagination
+- Front-End in Material UI
 
 ## Components 
 - Client
